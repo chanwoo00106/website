@@ -13,8 +13,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="font-bold text-9xl">Hello</div>
-
       <Masthead />
     </div>
   );
