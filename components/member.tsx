@@ -3,15 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  img: string;
   name: string;
   socialId: string;
-  link: string;
 }
-const Member: React.FC<Props> = ({ img, link, name, socialId }) => (
+const Member: React.FC<Props> = ({ name, socialId }) => (
   <div>
     <Image
-      src={img}
+      src={`https://github.com/${socialId}.png`}
       alt={name}
       width={150}
       height={150}
@@ -19,7 +17,7 @@ const Member: React.FC<Props> = ({ img, link, name, socialId }) => (
     />
     <div className="text-2xl xl:text-3xl">{name}</div>
     <div className="text-xl">
-      <Link href={link}>
+      <Link href={`https://github.com/${socialId}`}>
         <a target="_blank">{socialId}</a>
       </Link>
     </div>

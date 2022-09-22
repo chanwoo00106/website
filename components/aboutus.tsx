@@ -15,42 +15,12 @@ const AboutUs: React.FC = () => {
         <h2>Our Team</h2>
         <div className="mt-2">the &ldquo;spec-ops&rdquo;</div>
         <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 lg:gap-20">
-          <Member
-            img="https://github.com/Mindohyeon.png"
-            name="Mindohyeon"
-            link="https://github.com/Mindohyeon"
-            socialId="Mindohyeon"
-          />
-          <Member
-            img="https://github.com/yoosion030.png"
-            name="baegteun"
-            link="https://github.com/yoosion030"
-            socialId="baekteun"
-          />
-          <Member
-            img="https://github.com/hyeongrok7874.png"
-            name="baegteun"
-            link="https://github.com/hyeongrok7874"
-            socialId="baekteun"
-          />
-          <Member
-            img="https://github.com/Huuuunee.png"
-            name="baegteun"
-            link="https://github.com/Huuuunee"
-            socialId="baekteun"
-          />
-          <Member
-            img="https://github.com/louis7308.png"
-            name="baegteun"
-            link="https://github.com/louis7308"
-            socialId="baekteun"
-          />
-          <Member
-            img="https://github.com/baekteun.png"
-            name="baegteun"
-            link="https://github.com/baekteun"
-            socialId="baekteun"
-          />
+          <Member name="Dohyeon" socialId="Mindohyeon" />
+          <Member name="유시온" socialId="yoosion030" />
+          <Member name="김형록" socialId="hyeongrok7874" />
+          <Member name="시훈" socialId="Huuuunee" />
+          <Member name="전승원" socialId="louis7308" />
+          <Member name="baegteun" socialId="baekteun" />
         </div>
       </div>
     </section>
