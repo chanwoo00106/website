@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-bod {
+body {
   background: #000;
   font-family: SF Pro Display, SF Pro Icons, Helvetica;
   line-height: 1.1;
