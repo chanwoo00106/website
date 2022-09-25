@@ -1,6 +1,12 @@
 import React from "react";
 import { Tile, TileBackground, TileContent, TileWrapper } from "./tile";
-import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from "./work";
+import {
+  WorkBackground,
+  WorkContainer,
+  WorkLeft,
+  WorkLink,
+  WorkRight,
+} from "./work";
 import Image from "next/image";
 
 const Works = () => (
@@ -16,7 +22,8 @@ const Works = () => (
             <WorkLeft progress={progress}>
               <div>We built</div>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                Pink panda&apos;s app
+                <WorkLink href="https://naver.com">Pink Panda</WorkLink>&apos;s
+                app
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>

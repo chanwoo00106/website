@@ -48,3 +48,19 @@ export const WorkRight: React.FC<{
     </div>
   );
 };
+
+interface LinkProps {
+  href: string;
+  children?: React.ReactNode;
+}
+export const WorkLink: React.FC<LinkProps> = ({ href, children }) => (
+  <Link href={href}>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      className="underline underline-offset-8 decoration-1"
+    >
+      {children}
+    </a>
+  </Link>
+);
