@@ -3,6 +3,7 @@ import Head from "next/head";
 import AboutUs from "../components/aboutus";
 import Masthead from "../components/masthead";
 import Skills from "../components/skills";
+import TrustedBy from "../components/trustedby";
 import Works from "../components/works";
 
 const Home: NextPage = () => {
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
 
       <Works />
 
-      <AboutUs />
+      <TrustedBy />
     </div>
   );
 };
