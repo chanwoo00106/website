@@ -1,6 +1,7 @@
 import React from "react";
 import { Tile, TileBackground, TileContent, TileWrapper } from "./tile";
 import { WorkBackground, WorkContainer, WorkLeft, WorkRight } from "./work";
+import Image from "next/image";
 
 const Works = () => (
   <TileWrapper numOfPages={3}>
@@ -14,7 +15,19 @@ const Works = () => (
           <WorkContainer>
             <WorkLeft progress={progress}>
               <div>We built</div>
+              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                Pink panda&apos;s app
+              </div>
             </WorkLeft>
+            <WorkRight progress={progress}>
+              <Image
+                src="/iphone.png"
+                layout="responsive"
+                width={840}
+                height={1000}
+                alt="Pink Panda"
+              />
+            </WorkRight>
           </WorkContainer>
         )}
       ></Tile>
@@ -23,8 +36,20 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We built</div>
+              <div>We made</div>
+              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                steakwallet&nbsp;faster.
+              </div>
             </WorkLeft>
+            <WorkRight progress={progress}>
+              <Image
+                src="/iphone12.png"
+                layout="responsive"
+                width={840}
+                height={1629}
+                alt="어쩌고"
+              />
+            </WorkRight>
           </WorkContainer>
         )}
       ></Tile>
@@ -33,8 +58,18 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We built</div>
+              <div>We helped</div>
+              <div className="text-4xl md:text-5xl font-semibold tracking-tight">
+                ShowTime ship faster.
+              </div>
             </WorkLeft>
+            <Image
+              src="/iphone13.png"
+              layout="responsive"
+              width={300}
+              height={300}
+              alt="어쩌고"
+            />
           </WorkContainer>
         )}
       ></Tile>
