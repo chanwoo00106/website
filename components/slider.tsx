@@ -31,3 +31,5 @@ const SliderContainer: React.FC<Props> = ({
     </div>
   );
 };
+
+export default SliderContainer;

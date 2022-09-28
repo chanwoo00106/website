@@ -1,4 +1,5 @@
 import React from "react";
+import ClientLogos from "./client-logos";
 
 const TrustedBy: React.FC = () => (
   <section className="bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32">
@@ -10,7 +11,7 @@ const TrustedBy: React.FC = () => (
           some of the apps you use daily
         </span>
       </h3>
-      <div>logos</div>
+      <ClientLogos />
     </div>
     <div className="flex flex-col justify-center items-center">
       <div className="container mx-auto lg:max-w-[70%] lg:px-10">
